@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-      <div className='flex flex-wrap gap-6 justify-between cursor-pointer px-12 p-4 text-sm'>
+      <div className='bg-white w-screen z-20 flex flex-wrap gap-6 justify-between cursor-pointer px-12 p-4 text-sm'>
         <ul className='flex gap-2'>
           {
             socials.map((social,idx) => (

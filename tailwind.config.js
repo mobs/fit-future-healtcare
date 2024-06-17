@@ -11,6 +11,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "background": "linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147))"
+
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
@@ -78,8 +80,19 @@ module.exports = {
         "book-appointment": "#fdfff4",
         "hospitals" : "#edfaff",
         "doctors": "#fff6f4",
-        "specialities": "##f8f7ff"
-      }
+        "specialities": "#f8f7ff"
+      },
+      fontFamily: {
+        "nash": ['NashvilleRegular', 'sans-serif'], 
+        "nash-bold": ['NashvilleRegular', 'sans-serif'],
+        caslon: ['BigCaslon', 'serif'],
+        "francy": ["Francy", "sans-serif"],
+        "maxima-regular": ["MaximaRegular", "sans-serif"],
+        "maxima-italic": ["MaximaItalic", "sans-serif"],
+        "boldder": ["Boldder", "serif"],
+        "tactico": ["Tactico", "serif"],
+        "dove": ["Dove", "serif"]
+      },
     },
   },
   plugins: [],

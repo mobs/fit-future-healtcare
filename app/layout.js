@@ -18,14 +18,14 @@ export default function RootLayout({ children }) {
         <script src="https://kit.fontawesome.com/c713401fe7.js" crossorigin="anonymous"></script>
         {/* <link rel="stylesheet" href="css/fontawesome.css" /> */}
       </head>
-      <body className={`${inter.className} p4 px12`}>
+      <body className={`${inter.className}`}>
         <header>
           <Header />
         </header>
         <navbar>
           <Navbar />
         </navbar>
-        <main>
+        <main className="">
           {children}
         </main>
         <footer>

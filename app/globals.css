@@ -31,3 +31,89 @@
   position: relative;
   z-index: 1;
 }
+
+
+@font-face {
+  font-family: 'NashvilleRegular';
+  src: url('/fonts/nash-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NashvilleBold';
+  src: url('/fonts/nash-bold.otf') format('opentype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Francy';
+  src: url('/fonts/francy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaximaRegular';
+  src: url('/fonts/maxima-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaximaItalic';
+  src: url('/fonts/maxima-italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boldder';
+  src: url('/fonts/boldder.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tactico';
+  src: url('/fonts/tactico.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dove';
+  src: url('/fonts/dove.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.overlay-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-button::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  /* background-color: #3fa771; */
+  transition: width 0.5s ease;
+}
+
+.overlay-button:hover::before {
+  border-radius: 0px;
+  width: 110%;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
