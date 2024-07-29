@@ -110,23 +110,27 @@ import { FaUserDoctor } from "react-icons/fa6";
 export const ourServices = [
   {
     title: "orthopaedics",
-    icon: <FaUserDoctor className="text-green-dark text-7xl" />
+    icon: "/ortho.png"
   },
   {
     title: "medicine",
-    icon: <FaUserDoctor className="text-green-dark text-7xl" />
+    icon: "/medicine.png"
   },
   {
     title: "obs & gynae",
-    icon: <FaUserDoctor className="text-green-dark text-7xl" />
+    icon: "/gynae.png"
   },
-  // {
-  //   title: "Emergency Services",
-  //   icon: <FaUserDoctor className="text-green-dark text-7xl" />
-  // },
+  {
+    title: "Urology",
+    icon: "/urology.png"
+  },
+  {
+    title: "Physiotherapy",
+    icon: "/physio.png"
+  },
   {
     title: "General Surgery",
-    icon: <FaUserDoctor className="text-green-dark text-7xl" />
+    icon: "/surgery.png"
   }
 ]
 

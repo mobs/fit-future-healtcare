@@ -15,8 +15,8 @@ const HeroBanner = () => {
           <span className="gradient-text "> HAPPINESS </span>
         </h1>
         <div className="mt-4">
-          <button className="text-green-dark overlay-button px-4 py-2 rounded-lg font-normal text-lg bg-white hover:text-white transition-colors duration-300 ease-in-out">
-            <span className="z-20 relative">Contact Us</span>
+          <button className="text-white ring-1 ring-black/5 isolate bg-white/20 px-6 py-1 rounded-full shadwo-lg font-normal text-lg bg-white hover:text-white transition-colors duration-300 ease-in-out">
+            <span className="z-20 relative ">Contact Us</span>
           </button>
         </div>
         <div className="ml-56 mt-8">

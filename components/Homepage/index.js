@@ -16,7 +16,7 @@ const Homepage = () => {
       <OurServices />
       <OurDoctors />
       <WhatWeDo />
-      <InfiniteMovingCards items={galleryItems}/>
+      <InfiniteMovingCards className={"ml-24"} items={galleryItems}/>
       <Gallery />
     </main>
   )

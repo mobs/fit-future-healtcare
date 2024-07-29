@@ -4,26 +4,26 @@ import React, { useEffect } from 'react'
 
 const Navbar = () => {
 
-  useEffect(() => {
-    window.addEventListener('scroll', function() {
-      var scrollClass = document.querySelector('.header-display');
-      if(window.scrollY > 70) {
-        scrollClass.style.backgroundColor = 'white';
-        scrollClass.style.position = "fixed";
-        // scrollClass.style.marginTop = "0";
-        scrollClass.style.marginTop = "-70px"
-        scrollClass.style.color = '';
-      } else {
-        scrollClass.style.position = 'absolute';
-        scrollClass.style.color = '';
-        scrollClass.style.marginTop = "0"
-      }
-    });
-  }, [])
+  // useEffect(() => {
+  //   window.addEventListener('scroll', function() {
+  //     var scrollClass = document.querySelector('.header-display');
+  //     if(window.scrollY > 70) {
+  //       scrollClass.style.backgroundColor = 'white';
+  //       scrollClass.style.position = "fixed";
+  //       // scrollClass.style.marginTop = "0";
+  //       scrollClass.style.marginTop = "-70px"
+  //       scrollClass.style.color = '';
+  //     } else {
+  //       scrollClass.style.position = 'absolute';
+  //       scrollClass.style.color = '';
+  //       scrollClass.style.marginTop = "0"
+  //     }
+  //   });
+  // }, [])
 
   return (
-    <navbar className="aboslute header-display z-50 w-screen bg-white px-12 p-2 flex items-center justify-between">
-      <picture className='ml-6 flex flex-col items-center'>
+    <navbar className="sticky top-0 z-50 w-screen bg-white px-32 p-2 flex items-center justify-between">
+      <picture className='ml6 flex flex-col items-center'>
         <img src='/logo.png' alt='fit-future-healthcare' className='h-12 w-40 ml-4' />
       </picture>
 
