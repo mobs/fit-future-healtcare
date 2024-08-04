@@ -1,0 +1,18 @@
+.custom-slider .slick-slide {
+    padding: 0 20px; /* gap b/w slides */
+}
+
+.custom-slider .slick-list {
+    margin: 0 -20px; 
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}

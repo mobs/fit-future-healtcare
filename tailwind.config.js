@@ -76,7 +76,7 @@ module.exports = {
         "red-primary-1": "#eb1d25",
         "green-light-1" : "#3fa771",
         "green-light-2": "#04a34c",
-        "green-dark": "#1e8456",
+        "green-dark": "#1c584c",
         "book-appointment": "#fdfff4",
         "hospitals" : "#edfaff",
         "doctors": "#fff6f4",

@@ -3,8 +3,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-      <div className='bg-white w-screen z-20 flex flex-wrap gap-6 justify-between cursor-pointer px-12 p-4 text-sm'>
+    <header className='md:block hidden'>
+      <div className='bg-gray-100 w-screen z-20 flex flex-wrap gap-6 justify-between cursor-pointer px-12 p-4 text-sm'>
         <ul className='flex gap-2'>
           {
             socials.map((social,idx) => (
@@ -23,7 +23,7 @@ const Header = () => {
           About Us
         </li>
         <li>
-          <button className='p-2 bg-green-dark text-white rounded-full'> Book Appointment </button>
+          <button className='p-2 bg-green-dark shadow-lg isolate ring-1 ring-black/5 text-white rounded-full'> Book Appointment </button>
         </li>
         </ul>
       </div>

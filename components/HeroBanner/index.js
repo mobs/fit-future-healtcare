@@ -1,26 +1,30 @@
 import React from "react";
 import SearchBar from "../SearchBar";
+import { Rubik } from "next/font/google";
+
+const rubik = Rubik({ subsets: ["latin"] });
 
 const HeroBanner = () => {
   return (
-    <div className="relative h-[60vh]">
-      <img src="/banner.png" className="absolute h-[60vh] filter brightness-[0.45] w-screen" />
-      {/* <img src="/doctor.png" className="h-[85vh] w-screen" /> */}
-      <div>
-      <img src="/doctor.png" className="absolute top-12 h-[54vh] object-cover z-20 ml-[75rem]" />
-      </div>
-      <div className="absolute top-48 left-24 font-extrabold">
-        <h1 className="text-7xl text-white w[800px] font-dove">
-          SERVING <span className="gradient-text "> HEALTH </span> & 
-          <span className="gradient-text "> HAPPINESS </span>
+    <div className="relative h-[60vh] shadow-lg">
+      <img
+        src="/banner.webp"
+        className="absolute md:h-[60vh] h-[30vh] filter brightness-[0.95] w-screen object-fill"
+      />
+      <div></div>
+      <div className="absolute top-36 md:left-24 left-8 font-extrabold">
+        <h1 className={`${rubik.className} lg:text-5xl md:text-3xl text-lg text-green-dark w[800px] `}>
+          SERVING{" "}
+          <span className="gradienttext text-green-light-1"> HEALTH </span> &
+          <span className="gradienttext text-green-light-1"> HAPPINESS </span>
         </h1>
-        <div className="mt-4">
-          <button className="text-green-dark overlay-button px-4 py-2 rounded-lg font-normal text-lg bg-white hover:text-white transition-colors duration-300 ease-in-out">
-            <span className="z-20 relative">Contact Us</span>
-          </button>
+        <div className="mt-8 md:-ml-16">
+          <SearchBar />
         </div>
-        <div className="ml-56 mt-8">
-        <SearchBar />
+        <div className="mt-4">
+          <button className="text-slate-600 overlay-button ring-1 ring-black/25 isolate bg-white/20 px-6 py-1 rounded-full shadwo-lg font-normal text-lg bg-white hover:text-white transition-colors duration-300 ease-in-out">
+            <span className="z-20 relative ">Contact Us</span>
+          </button>
         </div>
       </div>
     </div>

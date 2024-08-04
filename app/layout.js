@@ -18,10 +18,11 @@ export default function RootLayout({ children }) {
         <script src="https://kit.fontawesome.com/c713401fe7.js" crossorigin="anonymous"></script>
         {/* <link rel="stylesheet" href="css/fontawesome.css" /> */}
       </head>
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} overflow-x-hidden bg-gray-100`}>
         <header>
           <Header />
         </header>
+        <hr />
         <navbar>
           <Navbar />
         </navbar>
