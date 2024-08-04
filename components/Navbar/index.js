@@ -1,33 +1,24 @@
 "use client"
 import { navList } from '@/utils/constants'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import Sidebar from '../Sidebar';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
+  const [sidebar, setSidebar] = useState(false);
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', function() {
-  //     var scrollClass = document.querySelector('.header-display');
-  //     if(window.scrollY > 70) {
-  //       scrollClass.style.backgroundColor = 'white';
-  //       scrollClass.style.position = "fixed";
-  //       // scrollClass.style.marginTop = "0";
-  //       scrollClass.style.marginTop = "-70px"
-  //       scrollClass.style.color = '';
-  //     } else {
-  //       scrollClass.style.position = 'absolute';
-  //       scrollClass.style.color = '';
-  //       scrollClass.style.marginTop = "0"
-  //     }
-  //   });
-  // }, [])
+  const handleSidebarVisiblity = () => {
+    setSidebar((prev) => !prev);
+  };
 
   return (
-    <navbar className="sticky top-0 z-50 w-screen bg-white px-32 p-2 flex items-center justify-between">
+    <navbar className="sticky top-0 z-50 w-screen bg-gray-100 lg:px-32 md:px-16 p-2 flex items-center justify-between shadow-xl">
       <picture className='ml6 flex flex-col items-center'>
         <img src='/logo.png' alt='fit-future-healthcare' className='h-12 w-40 ml-4' />
       </picture>
 
-      <ul className='flex justify-end gap-12'>
+      <ul className='md:flex hidden justify-end gap-12'>
         {
           navList.map((nav, idx) => (
             <li key={idx} className='cursor-pointer'>
@@ -36,6 +27,13 @@ const Navbar = () => {
           ))
         }
       </ul>
+
+      <button className="lg:hidden mt-2" onClick={handleSidebarVisiblity}>
+            <GiHamburgerMenu className={`${!sidebar ? 'block':'hidden'} text-4xl`} />
+            <RxCross1 className={`${sidebar ? 'block':'hidden'} text-4xl`}  />
+        </button>
+
+        {sidebar && <Sidebar />}
     </navbar>
   )
 }

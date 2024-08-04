@@ -137,7 +137,7 @@ export const ourServices = [
 export const doctors = [
   {
     name: "DR. SATYAVIR DHANKHAR",
-    img: "/dr-1.png",
+    img: "/doc-2.png",
     occupation: "",
     degree: "MBBS, MS ORTHO",
     college: "Ex Consultant Civil Hospital Bhiwani",
@@ -146,7 +146,7 @@ export const doctors = [
   },
   {
     name: "DR. PRIYA SINGH",
-    img: "/dr-2.png",
+    img: "/doc-3.png",
     occupation: "",
     degree: "MBBS MS GYNE",
     college: "PGIMS ROHTAK",
@@ -155,11 +155,67 @@ export const doctors = [
   },
   {
     name: "DR. MANDEEP SINGH",
-    img: "/dr-3.png",
+    img: "/doc-1.png",
     occupation: "",
     degree: "MBBS MD (Internal Medicine)",
     college: "Ex Resident SNMC Jodhpur, PGIMS Rohtak",
     department: "General medicine",
     specialised: ["Sugar Treatment", "High BP Treatment", "Asthma Treatment", "Tuberculosis/Pneumonia Treatment", "Chest and Breathing Problem", "Dengue/Malaria", "Paralysis/Seizure", "Emergency Service"]
   },
+]
+
+
+export const blogs = [
+  {
+    title: "Revolutionising Neurosurgery and the treatment of Brain Tumor",
+    desc: "Gamma Knife surgery is a painless, computer-guided form of radiation therapy. This treatment delivers highly focused beams of energy on tumors or lesions in your brain and upper spine. It commonly treats small brain tumors, arteriovenous malformations, trigeminal neuralgia and more.",
+    date: "02 August, 2024",
+    image: "/blog-1.jpg"
+  },
+  {
+    title: "Brain Tumor - Warnings, Signs and Symptoms",
+    desc: "Brain tumours can be life-altering, and early detection is crucial for effective treatment. Understanding the warning signs can help in seeking timely medical intervention.",
+    date: "28 July, 2024",
+    image: "/blog-2.png"
+  },
+  {
+    title: "Tumour Development and Growth: How They Form, and Characteristics",
+    desc: "Tumour development and growth are complex processes influenced by many factors within the body. To truly comprehend this intricate phenomenon, it's essential to delve into the science of tumour biology.",
+    date: "24 July, 2024",
+    image: "/blog-3.webp"
+  },
+  {
+    title: "Shaky Hands: Types, Causes and Treatments",
+    desc: "Shaky hands, or hand tremors, can manifest in different types, and the classification often depends on the specific characteristics of the tremor and its underlying cause.",
+    date: "04 August, 2024",
+    image: "/blog-4.jpg"
+  }
+]
+
+export const galleryImages = [
+  "/gallery/gal-1.png",
+  "/gallery/gal-2.png",
+  "/gallery/gal-3.png",
+  "/gallery/gal-4.png",
+  "/gallery/gal-5.png",
+  "/gallery/gal-6.png",
+  "/gallery/gal-7.png",
+  "/gallery/gal-8.png",
+  "/gallery/gal-9.png",
+  "/gallery/gal-10.png",
+  "/gallery/gal-11.png",
+  "/gallery/gal-12.png",
+  "/gallery/gal-13.png",
+  "/gallery/gal-14.png",
+  "/gallery/gal-15.png",
+  "/gallery/gal-16.png",
+  "/gallery/gal-17.png",
+  "/gallery/gal-18.png",
+  "/gallery/gal-19.png",
+  "/gallery/gal-20.png",
+  "/gallery/gal-21.png",
+  "/gallery/gal-22.png",
+  "/gallery/gal-23.png",
+  "/gallery/gal-24.png",
+  "/gallery/gal-25.png",
 ]

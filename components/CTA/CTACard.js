@@ -27,7 +27,7 @@ const CTACard = ({data, index}) => {
 
   return (
     <div className={`${bgColor} ${border} border-2 rounded-lg w-[350px] h-[120px] ring-1 ring-black/5 shadow-lg p-4 flex items-center justify-between hover:translate-y-2 transition-all duration-500 cursor-default`}>
-        <div className='w-2/3 flex flex-col justify-center'>
+        <div className='md:w-2/3 w-full flex flex-col justify-center'>
             <h1 className='text-xl font-semibold'>{data.title}</h1>
             <p className='text-gray-500'>{data.desc}</p>
         </div>

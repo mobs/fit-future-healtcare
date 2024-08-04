@@ -5,10 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 import DoctorCarousel from "../DoctorCarousel";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const SlickCarousel = ({
   numSlides = 1,
-  isInfiniteScrollable = false,
+  isInfiniteScrollable = true,
   sliderSpeed = 1000,
   dotsVisible = false,
   autoplay = true,
@@ -80,22 +81,22 @@ const SlickCarousel = ({
         carouselClasses && carouselClasses
       } `}
     >
-      {/* {currentSlide !== 0 && (
+      {/* {currentSlide !== 0 && ( */}
         <button
-          className="absolute top-1/2 transform -translate-y-[70%] md:-left-16 left-1 bg-white shadow-xl text-slate-600 text-2xl p-2 h-12 w-12 rounded-full z-10"
+          className="absolute flex items-center justify-center top-1/2 transform -translate-y-[70%] md:-left-16 left-1 bg-white shadow-xl text-slate-600 text-2xl p-2 h-12 w-12 rounded-full z-10"
           onClick={() => sliderRef.current.slickPrev()}
         >
-          {"<-"}
+          <FaArrowLeft />
         </button>
-      )}
-      {currentSlide !== data.length - numberOfSlides && (
+      {/* )} */}
+      {/* {currentSlide !== data.length - numberOfSlides && ( */}
         <button
-          className="absolute top-1/2 transform -translate-y-[70%] md:-right-16 right-1 bg-white shadow-xl text-slate-600 text-2xl h-12 w-12 p-2 rounded-full z-10"
+          className="absolute flex items-center justify-center top-1/2 transform -translate-y-[70%] md:-right-16 right-1 bg-white shadow-xl text-slate-600 text-2xl h-12 w-12 p-2 rounded-full z-10"
           onClick={() => sliderRef.current.slickNext()}
         >
-          {"->"}
+          <FaArrowRight />
         </button>
-      )} */}
+      {/* )} */}
       <Slider ref={sliderRef} {...settings}>
         {data.map((project, idx) => (
           <div

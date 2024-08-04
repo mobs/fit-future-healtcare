@@ -4,8 +4,8 @@ import CTACard from './CTACard'
 
 const CTASection = () => {
   return (
-    <div className='flex gap-12 px-32 py-12'>
-        <div className='grid grid-cols-2 gap-8 w-2/3'>
+    <div className='flex md:flex-row flex-col-reverse gap-12 lg:px-32 md:px-16 p-2 py-12'>
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-8 md:w-2/3 w-full'>
             {
                 CTAData.map((data, idx) => (
                     <div key={idx}>
@@ -16,8 +16,8 @@ const CTASection = () => {
 
         </div>
 
-        <div className='w-1/3'>
-            <h1 className='font-bold text-2xl font-serif mb-6'>
+        <div className='md:w-1/3 w-full'>
+            <h1 className='font-bold text-2xl font-serif mb-6 md:text-left text-center'>
                We can also help you with these
             </h1>
             <div className='border2 w-full h-full flex gap-8'>
