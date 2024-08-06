@@ -5,7 +5,7 @@ const OurServices = () => {
   return (
     <div className='flex flex-col gap-12 items-center justify-center bg-gray-100 py-12'>
         <h1 className='text-green-light-1 text-2xl font-bold'> OUR SERVICES </h1>
-        <h3 className='-mt-6 text-3xl text-slate-800 italic font-extrabold uppercase md:text-left text-center'>Best specialists services for you</h3>
+        <h3 className='-mt-6 text-xl text-slate-800 italic font-extrabold uppercase md:text-left text-center'>Best specialists services for you</h3>
 
         <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-8'>
             {
