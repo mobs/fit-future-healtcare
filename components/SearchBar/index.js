@@ -21,7 +21,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="overflow-visible flex items- justify-between lg:w-[700px] md:w-[500px] w-full mx-auto md:rounded-full rounded-xl md:p-3 p-2 bg-white shadow-lg">
+    <div className="overflow-visible flex items- justify-between lg:w-[700px] md:w-[500px] w-full mx-auto md:rounded-lg rounded-xl md:p-3 p-2 bg-white shadow-lg">
       <input
         type="text"
         // value={searchTerm}
@@ -32,7 +32,7 @@ export default function SearchBar() {
       />
       <button
         // onClick={handleSearch}
-        className="w-1/5 bg-green-light-1 text-white p-2 hover:bg-green-dark rounded-full focus:outline-none transition-colors duration-300"
+        className="w-1/5 bg-green-light-1 text-white p-2 hover:bg-green-dark rounded-lg focus:outline-none transition-colors duration-300"
       >
         Search
       </button>

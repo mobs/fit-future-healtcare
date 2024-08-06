@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://kit.fontawesome.com/c713401fe7.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c713401fe7.js" crossOrigin="anonymous"></script>
         {/* <link rel="stylesheet" href="css/fontawesome.css" /> */}
       </head>
       <body className={`${inter.className} overflow-x-hidden bg-gray-100`}>

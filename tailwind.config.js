@@ -11,7 +11,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "background": "linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147))"
+          "background": "linear-gradient(to right, rgb(211, 250, 189), rgb(122, 231, 240))"
 
       },
       animation: {

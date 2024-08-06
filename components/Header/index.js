@@ -23,7 +23,7 @@ const Header = () => {
           About Us
         </li>
         <li>
-          <button className='p-2 bg-green-dark shadow-lg isolate ring-1 ring-black/5 text-white rounded-full'> Book Appointment </button>
+          <button className='p-2 bg-green-dark shadow-lg isolate ring-1 ring-black/5 text-white rounded-lg hover:bg-background hover:text-black transition-all duration-300'> Book Appointment </button>
         </li>
         </ul>
       </div>

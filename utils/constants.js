@@ -9,22 +9,22 @@ export const navList = [
 export const socials = [
   {
     title: "Facebook",
-    icon: <i class="fa-brands fa-facebook" style={{ color: "" }}></i>,
+    icon: <i className="fa-brands fa-facebook" style={{ color: " " }}></i>,
     link: "https://facebook.com",
   },
   {
     title: "Instagram",
-    icon: <i class="fa-brands fa-instagram"></i>,
+    icon: <i className="fa-brands fa-instagram"></i>,
     link: "https://facebook.com",
   },
   {
     title: "Youtube",
-    icon: <i class="fa-brands fa-youtube"></i>,
+    icon: <i className="fa-brands fa-youtube"></i>,
     link: "https://facebook.com",
   },
   {
     title: "Twitter",
-    icon: <i class="fa-brands fa-twitter"></i>,
+    icon: <i className="fa-brands fa-twitter"></i>,
     link: "https://facebook.com",
   },
 ];
@@ -136,7 +136,7 @@ export const ourServices = [
 
 export const doctors = [
   {
-    name: "DR. SATYAVIR DHANKHAR",
+    name: "Dr. Satyavir Dhankhar",
     img: "/doc-2.png",
     occupation: "",
     degree: "MBBS, MS ORTHO",
@@ -145,22 +145,22 @@ export const doctors = [
     specialised: ["Fracture", "Accident/Trauma", "Joint Replacement", "Orthoscopy", "Sport Injury", "Paediatrics Orthopaedics", "Advanced C&ARM Setting", "Ligament Injury Treatment"]
   },
   {
-    name: "DR. PRIYA SINGH",
+    name: "Dr. Priya Singh",
     img: "/doc-3.png",
     occupation: "",
     degree: "MBBS MS GYNE",
     college: "PGIMS ROHTAK",
     department: "gynaecology",
-    specialised: ["Normal & Ceasarean Opertaion", "Complicated Pregnancy", "PCOD", "Menstrual Irregularities", "Leukorrhea", "Tubectomy", "Tubectomy", "Uterus Operation", "Ovarian Cysts Treatment", "Hysteroscopy", "Cervix Breast Uterus Cancer Screening", "Infertility Clininc", "Recurrent Abortion Clinic", "Menopause Clinic" ]
+    specialised: ["Normal & Ceasarean Opertaion", "PCOD", "Complicated Pregnancy", "Menstrual Irregularities", "Leukorrhea", "Tubectomy", "Uterus Operation"]
   },
   {
-    name: "DR. MANDEEP SINGH",
+    name: "Dr. Mandeep Singh",
     img: "/doc-1.png",
     occupation: "",
     degree: "MBBS MD (Internal Medicine)",
     college: "Ex Resident SNMC Jodhpur, PGIMS Rohtak",
     department: "General medicine",
-    specialised: ["Sugar Treatment", "High BP Treatment", "Asthma Treatment", "Tuberculosis/Pneumonia Treatment", "Chest and Breathing Problem", "Dengue/Malaria", "Paralysis/Seizure", "Emergency Service"]
+    specialised: ["Sugar Treatment", "Asthma Treatment","High BP Treatment",  "Tuberculosis/Pneumonia Treatment", "Breathing Problem", "Dengue/Malaria", ]
   },
 ]
 

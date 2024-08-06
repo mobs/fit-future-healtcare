@@ -2,20 +2,29 @@
 import React from 'react'
 
 
-const DoctorCarousel = ({ data }) => {
+const DoctorCarousel = ({ doctor, idx }) => {
   return (
-    <div className='flex md:flex-row flex-col-reverse md:gap-24 gap-0 ' >
-        <div className='w1/2 flex flex-col items-center justify-center gap-4 md:mt-16 bg-white/25 ring-1 ring-black/5 rounded-lg p-8 shadow-lg'>
-          <p className='text-center md:text-4xl text-xl font-bold mb-8 underline underline-offset-8'>DEPARTMENT OF {data.department.toUpperCase()}</p>
-          <p className='md:text-4xl text-xl font-bold text-green-dark text-center'>{data.name}</p>
-          <p className='md:text-3xl text-lg font-semibold text-center'>{data.degree}</p>
-          <p className='md:text-2xl text-base text-center' >{data.college}</p>
+    <div className={`flex flex-col gap-2 p-2 shadow-xl ${idx !== 1 && 'shadow-green-light-1'} border rounded-lg`}>
+      <img src={doctor.img} alt="doctor-image" className='h-72 w-full object-fit rounded-lg' />
+      <div className='px-4 py-2'>
+        <div className='flex justify-between items-center'>
+          <p className='font-bold text-lg'>{doctor.name}</p>
+          <p className='uppercase text-slate-600 fontlight text-sm'>{doctor.department}</p>
         </div>
-
-        <div className='relative flex items-center justify-center'>
-            <img src={data.img} className='object-cover md:h-[70vh] h-[30vh]' />
+        <p className='uppercase text-slate-500 text-sm pt-2'>{doctor.college}</p>
+        
+      </div>
+      <div className='flex flex-wrap gap-2 items-center justify-center' >
+          {doctor.specialised.map((data, idx) => (
+            <p key={idx} className='text-xs shadow-lg text-slate-500 border border-slate-300 rounded-lg p-2'>
+              {data}
+            </p>
+          ))}
         </div>
-
+      <div className='flex gap-2 items-center text-xs'>
+        <button className='flex-1 p-2 border rounded-lg border-slate-500 hover:bg-green-light-1 hover:text-white hover:border-0 transition-all duration-500'>View Full Profile</button>
+        <button className='flex-1 p-2 bg-green-light-1 rounded-lg text-white hover:bg-white hover:text-black hover:border border-black transition-all duration-500'>Book Appointment</button>
+      </div>
     </div>
   )
 }

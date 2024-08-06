@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <navbar className="sticky top-0 z-50 w-screen bg-gray-100 lg:px-32 md:px-16 p-2 flex items-center justify-between shadow-xl">
       <picture className='ml6 flex flex-col items-center'>
-        <img src='/logo.png' alt='fit-future-healthcare' className='h-12 w-40 ml-4' />
+        <img src='/logo.png' alt='fit-future-healthcare' className='h-16 w-56' />
       </picture>
 
       <ul className='md:flex hidden justify-end gap-12'>
