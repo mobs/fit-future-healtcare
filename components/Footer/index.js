@@ -1,3 +1,4 @@
+import { socials } from '@/utils/constants';
 import React from 'react'
 import { FaBookMedical, FaHouse, FaLocationArrow, FaLocationPin, FaMap, FaMapLocation, FaPhone, FaRightLeft } from 'react-icons/fa6'
 import { IoMail } from "react-icons/io5";
@@ -38,11 +39,24 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className='flex flex-col gap-4 items-center justify-center rounded-lg p-4 bg-white/20 ring-1 ring-black/25 shadow-lg md:w-[400px]' >
-        {/* cta or book apointment or subscribe etc */}
-        <h3 className='font-extrabold uppercase'>Book Emergency Service</h3>
-        <input type='phone' minLength={10} maxLength={13} placeholder='Whatsapp Number' required className='p-2 rounded-lg w-full' />
-        <button className='bg-green-dark w-full text-white rounded-lg p-2'>Book Now</button>
+      <div className='flex flex-col gap-4 items-start justify-start rounded-lg p-4 text-slate-700 ring1 ring-black/25  md:w[400px]' >
+      <p className='font-bold text-xl'>Connect With Us</p>
+        <ul className='flex gap-6'>
+          {
+            socials.map((social,idx) => (
+              <li key={idx} className='hover:scale-125 transition-all duration-500'>
+                <a href={social.link} target='_blank'>
+                <img src={social.img} className='h-6 w-6' />
+                {/* {social.icon} */}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <div className='flex gap-2'>
+        <input type='phone' minLength={10} maxLength={13} placeholder='Whatsapp Number' required className='p-2 rounded-full w-[300px]' />
+        <button className='bg-green-dark text-white rounded-full p-2 w-1/3 hover:bg-green-light-1 transition-all duration-300 hover:outline-none focus:outline-none ring-0'>Connect</button>
+        </div>
       </div>
       
     </div>

@@ -6,14 +6,14 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 const HeroBanner = () => {
   return (
-    <div className="relative h-[60vh] shadow-lg">
+    <div className="relative md:h-[50vh] h-[30vh] shadow-lg">
       <img
         src="/banner.webp"
-        className="absolute md:h-[60vh] h-[30vh] filter brightness-[0.45] w-screen object-fill"
+        className=" md:h-[50vh] h-[30vh] filter brightness-[0.45] w-screen md:object-fit object-cover"
       />
-      <div></div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center font-extrabold">
-        <h1 className={`${rubik.className} lg:text-7xl md:text-5xl text-lg text-green-dark w[800px] `}>
+      {/* <div></div> */}
+      <div className="absolute inset-0 flex flex-col items-center top-6 justifycenter font-extrabold">
+        <h1 className={`${rubik.className} lg:text-7xl md:text-5xl text-2xl text-center text-green-dark md:w-[700px] w-full`}>
           SERVING{" "}
           <span className="text-green-light-1"> HEALTH </span> &
           <span className="text-green-light-1"> HAPPINESS </span>

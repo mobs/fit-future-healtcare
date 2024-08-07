@@ -9,23 +9,27 @@ export const navList = [
 export const socials = [
   {
     title: "Facebook",
+    img: "/fb.png",
     icon: <i className="fa-brands fa-facebook" style={{ color: " " }}></i>,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/profile.php?id=61560794837071",
   },
   {
     title: "Instagram",
+    img: "/instagram.webp",
     icon: <i className="fa-brands fa-instagram"></i>,
-    link: "https://facebook.com",
+    link: "https://www.instagram.com/fitfuturehealthcare/",
   },
   {
     title: "Youtube",
+    img: "/youtube.png",
     icon: <i className="fa-brands fa-youtube"></i>,
-    link: "https://facebook.com",
+    link: "https://youtube.com",
   },
   {
     title: "Twitter",
+    img: "/twitter.png",
     icon: <i className="fa-brands fa-twitter"></i>,
-    link: "https://facebook.com",
+    link: "https://x.com",
   },
 ];
 
@@ -166,29 +170,41 @@ export const doctors = [
 
 
 export const blogs = [
-  {
-    title: "Revolutionising Neurosurgery and the treatment of Brain Tumor",
-    desc: "Gamma Knife surgery is a painless, computer-guided form of radiation therapy. This treatment delivers highly focused beams of energy on tumors or lesions in your brain and upper spine. It commonly treats small brain tumors, arteriovenous malformations, trigeminal neuralgia and more.",
-    date: "02 August, 2024",
-    image: "/blog-1.jpg"
-  },
+  // {
+  //   title: "Revolutionising Neurosurgery and the treatment of Brain Tumor",
+  //   desc: "Gamma Knife surgery is a painless, computer-guided form of radiation therapy. This treatment delivers highly focused beams of energy on tumors or lesions in your brain and upper spine. It commonly treats small brain tumors, arteriovenous malformations, trigeminal neuralgia and more.",
+  //   date: "02 August, 2024",
+  //   image: "/blog-1.jpg"
+  // },
   {
     title: "Brain Tumor - Warnings, Signs and Symptoms",
     desc: "Brain tumours can be life-altering, and early detection is crucial for effective treatment. Understanding the warning signs can help in seeking timely medical intervention.",
     date: "28 July, 2024",
     image: "/blog-2.png"
   },
-  {
-    title: "Tumour Development and Growth: How They Form, and Characteristics",
-    desc: "Tumour development and growth are complex processes influenced by many factors within the body. To truly comprehend this intricate phenomenon, it's essential to delve into the science of tumour biology.",
-    date: "24 July, 2024",
-    image: "/blog-3.webp"
-  },
+  // {
+  //   title: "Tumour Development and Growth: How They Form, and Characteristics",
+  //   desc: "Tumour development and growth are complex processes influenced by many factors within the body. To truly comprehend this intricate phenomenon, it's essential to delve into the science of tumour biology.",
+  //   date: "24 July, 2024",
+  //   image: "/blog-3.webp"
+  // },
   {
     title: "Shaky Hands: Types, Causes and Treatments",
     desc: "Shaky hands, or hand tremors, can manifest in different types, and the classification often depends on the specific characteristics of the tremor and its underlying cause.",
     date: "04 August, 2024",
     image: "/blog-4.jpg"
+  },
+  {
+    title: "Introduction to Angiography & Angioplasty",
+    desc: "An angiography is a diagnostic procedure that uses X-ray images to check blockages in your blood vessels. This test allows your healthcare provider to see how blood circulates in blood vessels in particular areas of your body.",
+    date: "02 August, 2024",
+    image: "/angiography.webp"
+  },
+  {
+    title: "Tendonitis (Tendinitis): A Comprehensive Guide",
+    desc: "Tendonitis, also known as tendinitis, is a common musculoskeletal condition that affects millions of people worldwide. From athletes to office workers, individuals of all ages and activity levels can experience tendonitis, which occurs when tendons become inflamed or irritated.",
+    date: "28 July, 2024",
+    image: "/tendonitis.png"
   }
 ]
 

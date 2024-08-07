@@ -17,7 +17,7 @@ const CTASection = () => {
         </div>
 
         <div className='md:w-1/3 w-full'>
-            <h1 className='font-bold text-2xl font-serif mb-6 md:text-left text-center'>
+            <h1 className='font-bold text-2xl italic mb-6 md:text-left text-center'>
                We can also help you with these
             </h1>
             <div className='border2 w-full h-full flex gap-8'>

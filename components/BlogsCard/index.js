@@ -122,7 +122,7 @@ const BlogsCard = ({
             <div className="flex flex-col rounded-lg bg-white">
               <img
                 src={project?.image}
-                className="h-[200px] rounded-lg object-cover p-1"
+                className="h-[200px] rounded-lg object-fit p-1"
               />
 
               <div className="p-4 flex flex-col gap-2">
