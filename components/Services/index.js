@@ -7,10 +7,10 @@ const OurServices = () => {
         <h1 className='text-green-light-1 text-2xl font-bold'> OUR SERVICES </h1>
         <h3 className='-mt-6 text-xl text-slate-800 italic font-extrabold uppercase md:text-left text-center'>Best specialists services for you</h3>
 
-        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-8'>
+        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 md:gap-8 gap-4'>
             {
                 ourServices.map((service, idx) => (
-                    <div key={idx} className='hover:scale-110 transition-all duration-500 flex flex-col gap-4 items-center justify-center h-[200px] w-[200px] bg-transparent isolate rounded-lg shadow-xl text-white hover:bg-background ring-1 ring-black/5'>
+                    <div key={idx} className='hover:scale-110 transition-all duration-500 flex flex-col gap-4 items-center justify-center h-[200px] md:w-[200px] w-[180px] bg-transparent isolate rounded-lg shadow-xl text-white hover:bg-background ring-1 ring-black/5'>
                         <img src={service.icon} className='h-16 w-16' />
                         <p className='text-green-dark font-bold text-lg'>{service.title.toUpperCase()}</p>
                     </div>

@@ -5,7 +5,7 @@ import React from 'react'
 const DoctorCarousel = ({ doctor, idx }) => {
   return (
     <div className={`flex flex-col gap-2 p-2 shadow-xl ${idx !== 1 && 'shadow-green-light-1'} border rounded-lg`}>
-      <img src={doctor.img} alt="doctor-image" className='h-72 w-full object-fit rounded-lg' />
+      <img src={doctor.img} alt="doctor-image" className='h-72 w-72 object-contain rounded-lg hover:scale-110 transition-all duration-500' />
       <div className='px-4 py-2'>
         <div className='flex justify-between items-center'>
           <p className='font-bold text-lg'>{doctor.name}</p>

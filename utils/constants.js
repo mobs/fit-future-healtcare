@@ -177,11 +177,18 @@ export const blogs = [
   //   image: "/blog-1.jpg"
   // },
   {
-    title: "Brain Tumor - Warnings, Signs and Symptoms",
-    desc: "Brain tumours can be life-altering, and early detection is crucial for effective treatment. Understanding the warning signs can help in seeking timely medical intervention.",
-    date: "28 July, 2024",
-    image: "/blog-2.png"
+    title: "What is cardiovascular disease?",
+    desc: "Cardiovascular disease is a group of diseases affecting your heart and blood vessels. These diseases can affect one or many parts of your heart and/or blood vessels. A person may be symptomatic (physically experiencing the disease) or asymptomatic (not feeling anything at all).",
+    date: "02 August, 2024",
+    image: "/blog-1.png"
+
   },
+  // {
+  //   title: "Brain Tumor - Warnings, Signs and Symptoms",
+  //   desc: "Brain tumours can be life-altering, and early detection is crucial for effective treatment. Understanding the warning signs can help in seeking timely medical intervention.",
+  //   date: "28 July, 2024",
+  //   image: "/blog-2.png"
+  // },
   // {
   //   title: "Tumour Development and Growth: How They Form, and Characteristics",
   //   desc: "Tumour development and growth are complex processes influenced by many factors within the body. To truly comprehend this intricate phenomenon, it's essential to delve into the science of tumour biology.",
@@ -234,4 +241,24 @@ export const galleryImages = [
   "/gallery/gal-23.png",
   "/gallery/gal-24.png",
   "/gallery/gal-25.png",
+]
+
+export const mobileGallery = [
+  "/gallery/galm-1.png",
+  "/gallery/galm-2.png",
+  "/gallery/galm-3.png",
+  "/gallery/galm-4.png",
+  "/gallery/galm-5.png",
+  "/gallery/galm-6.png",
+  "/gallery/galm-7.png",
+  "/gallery/galm-8.png",
+  "/gallery/galm-9.png",
+  "/gallery/galm-10.png",
+  "/gallery/galm-11.png",
+  "/gallery/galm-12.png",
+  "/gallery/galm-13.png",
+  "/gallery/galm-14.png",
+  "/gallery/galm-15.png",
+  "/gallery/galm-16.png",
+  "/gallery/galm-17.png",
 ]
