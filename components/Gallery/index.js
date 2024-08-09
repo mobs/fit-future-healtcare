@@ -1,5 +1,5 @@
 "use client";
-import { blogs, galleryImages } from "@/utils/constants";
+import { blogs, galleryImages, mobileGallery } from "@/utils/constants";
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -112,10 +112,11 @@ const Gallery = ({
           <FaArrowRight />
         </button>
         {/* )} */}
+        <div className="md:block hidden">
         <Slider
           ref={sliderRef}
           {...settings}
-          className=""
+          
         >
           {galleryImages.map((project, idx) => (
             <div
@@ -126,6 +127,22 @@ const Gallery = ({
             </div>
           ))}
         </Slider>
+        </div>
+        <div className="md:hidden block">
+        <Slider
+          ref={sliderRef}
+          {...settings}
+          
+        >
+          {mobileGallery.map((project, idx) => (
+            <div
+              key={idx}
+            >
+              <img src={project} className="md:w-[80vw] w-full md:h-[600px] h-[400px]" />
+            </div>
+          ))}
+        </Slider>
+        </div>
       </div>
     </div>
   );

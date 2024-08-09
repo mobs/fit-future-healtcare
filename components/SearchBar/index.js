@@ -32,28 +32,10 @@ export default function SearchBar() {
       />
       <button
         // onClick={handleSearch}
-        className="w-1/5 bg-green-light-1 text-white p-2 hover:bg-green-dark rounded-lg focus:outline-none transition-colors duration-300"
+        className="md:w-1/5 bg-green-light-1 text-white p-2 hover:bg-green-dark rounded-lg focus:outline-none transition-colors duration-300"
       >
         Search
       </button>
     </div>
-    // <Box sx={{ display: 'flex', flexWrap: 'wrap' }} >
-    //   <div>
-
-    //     <FormControl onSubmit={() => handleFormSubmit()} sx={{ m: 1, width: '100ch' }} className="bg-white rounded-lg" variant="outlined">
-    //       <InputLabel htmlFor="" className='text-green-light-1'>Search for doctor...</InputLabel>
-    //       <OutlinedInput
-    //         id="outlined-adornment-password"
-    //         endAdornment={
-    //           <InputAdornment position="end">
-
-    //           </InputAdornment>
-    //         }
-    //         label=""
-    //       />
-    //     </FormControl>
-
-    //   </div>
-    // </Box>
   );
 }
